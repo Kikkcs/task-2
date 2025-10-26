@@ -1,46 +1,29 @@
 1. Attachments
 
 The email contains a malicious attachment, often named like:
-
 Bonus_Structure_2025.xlsm
-
 NewYearBonusForm.docx
-
 YearEndBonus.pdf
-
 Red flags for attachments:
-
 Requests you to enable macros (.xlsm or .docm) — a common way to deliver malware.
-
 Unexpected file type for the context (HR should never send Excel macros or unknown PDFs to request sensitive info).
-
 Generic or vague file names that create urgency (“Submit to Claim Bonus”).
 
 Guideline:
 Never open attachments from unverified emails. Legitimate HR departments use secure internal portals for bonus forms.
 
 2. Links in the Email
-
 The email may contain links embedded in text or buttons, such as:
-
 https://company-bonus-portal.info/claim
-
 https://company.com.bonus-update.net
-
 Click here to claim your bonus
-
 Red flags for links:
 
 Domain mismatch: The link domain is not the official company domain (company.com).
-
 Lookalike domains: Extra words, hyphens, or alternate TLDs (.net, .info, .xyz).
-
 URL shorteners: Using bit.ly, tinyurl.com, or similar to hide the real destination.
-
 Unexpected login requests: Asking for corporate credentials, bank details, or personal information.
 
 Guideline:
-
 Hover over links to see the real URL without clicking.
-
 Use online scanners like VirusTotal to safely check suspicious URLs.
