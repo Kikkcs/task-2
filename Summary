@@ -1,0 +1,33 @@
+1. Spoofed Sender
+
+The email appears to come from the HR department but uses a fake domain (hr@company-bonus.com).
+Display name mimics the real HR department, but the actual address is not legitimate.
+
+2.Header Discrepancies
+Return-Path and Reply-To addresses do not match the From address.
+
+3.SPF, DKIM, and DMARC authentication fail.
+The email originates from an external IP unrelated to the company’s mail servers.
+
+4.Suspicious Attachments
+Attachment names such as Bonus_Structure_2025.xlsm or NewYearBonusForm.docx.
+
+5.Files may contain macros or request sensitive information.
+HR typically does not send bonus forms via email attachments.
+
+6.Suspicious or Mismatched Links
+Visible text suggests official company links, but actual URLs point to external or lookalike domains (company-bonus-portal.info, company.com.bonus-update.net).
+
+7.Shortened links like bit.ly/bonus2025form hide the true destination.
+Urgent or Threatening Language
+
+8.Phrases like “Submit before midnight to claim your bonus” or “Failure to respond will forfeit your bonus.”
+Creates psychological pressure to act quickly, bypassing careful scrutiny.
+
+Personalization and Social Engineering
+Includes employee first name, last name, and company name to appear legitimate.
+Combines authority, reward, and urgency to increase click rates.
+
+9.Timing and Context
+Sent near year-end, exploiting the expectation of bonuses.
+This timing makes recipients more likely to trust and act on the email.
