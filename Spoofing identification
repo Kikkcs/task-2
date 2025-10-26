@@ -1,0 +1,77 @@
+Here in the above sample phishing mail, there are several ways of analysing or identifying spoofing which are as follows below:-
+
+1. Extract the Sender’s Email Address
+In your email client, view the full sender details (not just the display name).
+
+From: "HR Department" <hr@company-bonus.com>
+
+
+2. Compare Domains
+
+Compare the sender’s domain with your official company domain.
+
+Official: hr@company.com
+
+Spoofed: hr@company-bonus.com, hr@bonus-company.com, or hr@company.co
+
+Even small differences like added words (-bonus, -secure), or a changed TLD (.net instead of .com) are signs of spoofing.
+
+
+3. Check for Display Name Tricks
+
+Attackers may use display names that hide the real address.
+For example:     From: "HR Department - Company Pvt Ltd" <hr@bonus-update.com>
+
+The display name looks authentic, but the actual domain (bonus-update.com) reveals it’s fake.
+
+
+4. Examine Header Fields (Technical Check)
+
+Open the email headers (in Gmail, “Show Original” → in Outlook, “View Message Source”).
+Look for these fields:
+
+From:
+Return-Path:
+Reply-To:
+Received:
+Authentication-Results:
+
+
+
+
+Then check:  From vs Return-Path: If they are different, spoofing is likely.
+Example:
+      From: hr@company.com
+      Return-Path: hr@bonusmail.net
+
+→ Spoof detected.
+Reply-To mismatch: Attackers might redirect replies to another address.
+Reply-To: hr@claimbonus-mail.com
+→ Suspicious.
+
+
+5. SPF, DKIM, and DMARC Verification
+
+In headers, look for the Authentication-Results line:
+
+         spf=fail
+         dkim=fail
+         dmarc=fail
+
+
+If any of these fail, the sender is not authorized to send emails on behalf of that domain.
+
+Example of spoofed message:
+
+             Authentication-Results:
+             spf=fail (sender IP is 192.0.2.123)
+             dkim=fail (no valid signature)
+             dmarc=fail (policy reject)
+
+Legitimate emails should usually show spf=pass and dkim=pass.
+
+6. Domain Registration Check
+
+Search the sending domain (company-bonus.com) on a WHOIS lookup site (like whois.domaintools.com).
+
+If it was:  Recently registered (within days or weeks),Owned by an unrelated person or registrar,  then it’s very likely spoofed.
