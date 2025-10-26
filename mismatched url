@@ -1,0 +1,13 @@
+Examples from the New Year’s Bonus Email
+Visible text: “Click here to claim your bonus”
+Actual URL: https://company-bonus-portal.info/claim
+Visible text: “HR Portal Login”
+Actual URL: https://company.com.bonus-update.net/login
+Visible text: “View your bonus details”
+Actual URL: http://bit.ly/bonus2025form
+
+Analysis:
+All three examples show the link text looks official, referencing the company or HR, but the real URLs point to external or lookalike domains.
+Shortened URLs like bit.ly hide the real destination, making it impossible to tell at a glance where you are being redirected.
+Domains with extra words or alternate TLDs (.info, .net) are not part of the official company domain.
+
